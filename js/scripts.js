@@ -10,10 +10,7 @@ function getBestFeature() {
 }
 
 
-// Show Dream Dates
-
-// Add window load Event Listener
-window.addEventListener("load", function () {
+function findDate() {
     // Add Event Listener to Form
     let form = document.querySelector("form");
     form.addEventListener("submit", function (event) {
@@ -54,5 +51,10 @@ window.addEventListener("load", function () {
         else {
             document.querySelector("div#lowe").removeAttribute("class");
         }
-    })
-});
+    });
+}
+
+// Show Dream Dates
+
+// Add window load Event Listener
+window.addEventListener("load", findDate);
