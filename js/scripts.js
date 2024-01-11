@@ -1,8 +1,8 @@
 // Get User's Inputs
 function aboutYou() {
-    age = document.getByElementId("age").value;
+    age = document.getElementById("age").value;
     console.log(age);
-    bestFeature = document.getByElementId("bestFeature").value;
+    bestFeature = document.getElementById("bestFeature").value;
     console.log(bestFeature);
 }
 
@@ -18,17 +18,20 @@ window.addEventListener("load", function () {
         event.preventDefault();
 
         // Set All Content to Hidden
-        let lowe = document.querySelector("lowe")
+        let lowe = document.getElementById("lowe");
         lowe.setAttribute("class", "hidden");
 
-        let carell = document.querySelector("carell")
+        let carell = document.getElementById("carell");
         carell.setAttribute("class", "hidden");
 
-        let holland = document.querySelector("holland")
+        let holland = document.getElementById("holland");
         holland.setAttribute("class", "hidden");
 
-        let noDate = document.querySelector("noDate")
+        let noDate = document.getElementById("noDate");
         noDate.setAttribute("class", "hidden");
+
+        // Get User Input
+        aboutYou();
 
     })
 });
