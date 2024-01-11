@@ -4,7 +4,7 @@
 
 #### A basic JavaScript Program to display user's dream celebrity date based on age & best feature.
 
-#### PENDING
+#### PENDING GH PAGES
 
 ## Technologies Used 
 
