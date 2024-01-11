@@ -47,8 +47,12 @@ window.addEventListener("load", function () {
             console.log("Tom Holland");
         }
 
+        else if (bestFeature === "Body") {
+            console.log("Steve Carell");
+        }
+
         else {
-            console.log("Potential Date");
+            console.log("Rob Lowe");
         }
 
 
