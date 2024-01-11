@@ -4,7 +4,7 @@ function getAge() {
     return age;
 }
 
-function bestFeature() {
+function getBestFeature() {
     bestFeature = document.getElementById("bestFeature").value;
     return bestFeature;
 }
@@ -35,9 +35,9 @@ window.addEventListener("load", function () {
 
         // Get User Input
         age = getAge();
-        feature = bestFeature();
+        feature = getBestFeature();
 
-        // Run if else statements to find suitable date
+        // Run if else statements to display dream date
 
         if (age < 25 || age >= 60) {
             document.querySelector("div#noDate").removeAttribute("class");
@@ -54,6 +54,5 @@ window.addEventListener("load", function () {
         else {
             document.querySelector("div#lowe").removeAttribute("class");
         }
-
     })
 });
