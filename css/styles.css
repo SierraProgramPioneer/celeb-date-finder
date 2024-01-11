@@ -1,0 +1,17 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(198, 118, 189);
+}
+
+img {
+    height: 200px;
+    width: auto;
+}
+
+div {
+    padding-left: 20px;
+}
+
+.hidden {
+    display: none;
+}
