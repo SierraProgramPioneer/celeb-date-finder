@@ -1,5 +1,5 @@
 // Get User's Inputs
-function age() {
+function getAge() {
     age = parseInt(document.getElementById("age").value);
     return age;
 }
@@ -34,11 +34,22 @@ window.addEventListener("load", function () {
         noDate.setAttribute("class", "hidden");
 
         // Get User Input
-        age = age();
-        bestFeature = bestFeature();
+        age = getAge();
+        feature = bestFeature();
 
         // Run if else statements to find suitable date
 
+        if (age < 25 || age >= 60) {
+            console.log("Too Young or too Old");
+        }
+
+        else if (age >= 25 && age <= 35) {
+            console.log("Tom Holland");
+        }
+
+        else {
+            console.log("Potential Date");
+        }
 
 
     })
