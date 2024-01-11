@@ -1,9 +1,12 @@
 // Get User's Inputs
-function aboutYou() {
-    age = document.getElementById("age").value;
-    console.log(age);
+function age() {
+    age = parseInt(document.getElementById("age").value);
+    return age;
+}
+
+function bestFeature() {
     bestFeature = document.getElementById("bestFeature").value;
-    console.log(bestFeature);
+    return bestFeature;
 }
 
 
@@ -31,7 +34,12 @@ window.addEventListener("load", function () {
         noDate.setAttribute("class", "hidden");
 
         // Get User Input
-        aboutYou();
+        age = age();
+        bestFeature = bestFeature();
+
+        // Run if else statements to find suitable date
+
+
 
     })
 });
