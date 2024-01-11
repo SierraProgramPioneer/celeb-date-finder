@@ -40,21 +40,20 @@ window.addEventListener("load", function () {
         // Run if else statements to find suitable date
 
         if (age < 25 || age >= 60) {
-            console.log("Too Young or too Old");
+            document.querySelector("div#noDate").removeAttribute("class");
         }
 
         else if (age >= 25 && age <= 35) {
-            console.log("Tom Holland");
+            document.querySelector("div#holland").removeAttribute("class");
         }
 
         else if (bestFeature === "Body") {
-            console.log("Steve Carell");
+            document.querySelector("div#carell").removeAttribute("class");
         }
 
         else {
-            console.log("Rob Lowe");
+            document.querySelector("div#lowe").removeAttribute("class");
         }
-
 
     })
 });
