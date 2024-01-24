@@ -54,7 +54,6 @@ function findDate() {
     });
 }
 
-// Show Dream Dates
 
 // Add window load Event Listener
 window.addEventListener("load", findDate);
